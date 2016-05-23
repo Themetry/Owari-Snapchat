@@ -14,3 +14,17 @@
 /*--------------------------------------------------------------
 # Supplemental Social Icons
 --------------------------------------------------------------*/
+.social-links a[href*='snapchat.com']:before {
+	background-image: url('snapchat-ghost.svg'); /* SVG fill color of #0054a6 */
+	background-position: center center; /* Center it vertically/horizontally like other icons */
+	background-repeat: no-repeat; /* Don't repeat it, like other icons */
+	background-size: 16px; /* Should match the font size of other icon font */
+	content: ''; /* To make sure icon font fallback isn't displayed */
+	height: 48px; /* 48px height to match other icons */
+	width: 100%; /* 48px width to match other icons */
+	filter: brightness(0%); /* Make initial color black */
+}
+
+.social-links a[href*='snapchat.com']:hover:before {
+	filter: brightness(100%); /* Reveal initial SVG fill color */
+}
